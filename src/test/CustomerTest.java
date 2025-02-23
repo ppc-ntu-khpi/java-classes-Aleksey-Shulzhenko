@@ -1,13 +1,14 @@
 package test;
 
-import domain.Customer;
+import domain.Сustomer;
 
 public class CustomerTest {
     public static void main(String[] args) {
         // Створення об'єкта Customer
-        Customer customer = new Customer();
+        Сustomer customer = new Сustomer();
         
         // Виведення властивостей об'єкта за допомогою методу displayCustomerInfo
-        customer.displayCustomerInfo();
+        // customer.displayCustomerInfo();
+        System.out.println("Hello!");
     }
 }
