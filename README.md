@@ -30,7 +30,49 @@
 :triangular_flag_on_post: **УВАГА!** Ваша оцінка залежить від того, що саме було вами зроблено:
 * на "**три**" - просто виконані перелічені вище завдання
 * на "**чотири**" - те, що на "три", плюс, добре оформлений файл змініть файл ````README.md````  - з кодом класу ```` Сustomer ```` та скріншотом роботи програми
-* на "**п'ять**" - те, що на "чотири", плюс, змінити код класу наступним чином:
+
+# Java Classes - Customer Example
+
+### Клас Customer
+````java
+package domain;
+
+public class Customer {
+    private int ID;
+    private boolean isNew;
+    private double total;
+
+    public Customer() {
+        this.ID = 1;
+        this.isNew = true;
+        this.total = 1000.0;
+    }
+
+    public void displayCustomerInfo() {
+        System.out.println("Customer ID: " + ID);
+        System.out.println("Is New Customer: " + isNew);
+        System.out.println("Total purchases are: " + total);
+    }
+}
+````
+
+
+## Результат роботи програми
+
+Запуск класу `CustomerTest` дає такий результат:
+
+Customer ID: 1
+
+Is New Customer: true
+
+Total purchases are: 1000.0
+
+
+### Скриншот роботи програми
+
+![alt text](Solution/done.png)
+ 
+ * на "**п'ять**" - те, що на "чотири", плюс, змінити код класу наступним чином:
   * додати **конструктор за замовчуванням**, який ініціалізує атрибути початковими значеннями (див. відеозапис лекції) 
   * додати **методи для зміни атрибутів** - ````setID````, ````setStatus````, ````setTotal```` з відповідними параметрами та перевіркою присвоюваних значень (можуть або нічого не повертати, або повертати булевське значення, див. відеозапис лекції). 
 **Підказка:** натисніть в Netbeans <kbd>Alt</kbd> + <kbd>Insert</kbd> і оберіть пункт "Getter and Setter..." - Netbeans напише все замість вас!
